@@ -7,7 +7,9 @@ const QualitiesList = ({ id }) => {
   const { getQuality } = useQualities();
   return id.map((element) => {
     const qual = getQuality(element);
-    return <button className={`btn btn-${qual.color}`}>{qual.name}</button>;
+    return (
+      <button className={`btn btn-${qual.color} mx-1 my-1`}>{qual.name}</button>
+    );
   });
 };
 
