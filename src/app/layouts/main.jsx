@@ -4,7 +4,6 @@ import useMockData from "../utils/mockData";
 const Main = () => {
   const { error, initialize, progress, status } = useMockData();
   const handleClick = (params) => {
-    console.log("ok");
     initialize();
   };
 
